@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Rampart+One&family=Ribeye+Marrow&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(228,214,40);
+    background: linear-gradient(180deg, rgba(228,214,40,1) 0%, rgba(91,254,255,1) 100%);
+}
+
+.container {
+    width: 100%;
+    height: 500%;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 24px;
+}
+
+.card-img-overlay{
+    border-radius: 20px !important;
+}
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.176);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.053);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border-style: none;
+}
+
+.card > img {
+    max-height: 18rem;
+    object-fit:cover;
+    object-position: center;
+}
+
+/* .imgEnSection{
+    width: 49%;
+    background-image:url("https://img.freepik.com/fotos-premium/lugar-trabajo-oficina-laptop-mesa-madera_87742-18230.jpg?w=2000");
+    background-size: cover;
+} 
+
+.divDentroDeSection{
+    width: 49%;
+}*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+h1, h2 {
+    padding: 2rem;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Diphylleia', serif;
+}
+
+
+h1{
+    font-family: 'Rampart One', cursive;
+}
+h2{
+    font-family: 'Ribeye Marrow', cursive;
+}
+

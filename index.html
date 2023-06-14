@@ -3,10 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADN Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <title>ADN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Rampart+One&family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="divDentroDeSection">
+                <h1 class="text-center">ADN Web Solutions</h1>
+                <p class="text-center">Necesitas una página web y no sabés por dónde empezar?</p>
+            </div>
+            <div class="imgEnSection">
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="divDentroDeSection">
+                <h2 class="text-center">Nosotros</h2>
+                <p>Este es un proyecto que nace de un grupito de programadores que se conocieron en un curso y que no querían que quedara todo ahí, por lo que emprendieron este viaje de aprender a trabajar en equipo haciendo proyectos y creciendo no solo como personas sino interpersonalmente también.
+                Y nada eso xD pero los quiero chis, es un gusto y honor trabajar con ustedes💖</p>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="divDentroDeSection">
+                <h2 class="text-center">Proyectos</h2>
+                <div class="cards">
+                    <div class="card" style="width: 30rem;">
+                        <img src="https://previews.123rf.com/images/dolgachov/dolgachov1707/dolgachov170702756/82754259-empresaria-con-laptop-y-caf%C3%A9-en-la-oficina.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay glassmorphism">
+                            <h5 class="card-title text-center" style="color:black;">Card title</h5>
+                            <p class="card-text" style="color:black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-outline-dark">Ver el proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30rem;">
+                        <img src="https://img.freepik.com/fotos-premium/lugar-trabajo-oficina-laptop-mesa-madera_87742-18230.jpg?w=2000" class="card-img" alt="...">
+                        <div class="card-img-overlay glassmorphism">
+                            <h5 class="card-title text-center" style="color:black;">Card title</h5>
+                            <p class="card-text" style="color:black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-outline-dark">Ver el proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30rem;">
+                        <img src="https://previews.123rf.com/images/sirfujiyama/sirfujiyama1511/sirfujiyama151100026/47420308-escritorio-de-trabajo-de-oficina-con-laptop-libreta-y-caf%C3%A9.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay glassmorphism">
+                            <h5 class="card-title text-center" style="color:black;">Card title</h5>
+                            <p class="card-text" style="color:black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-outline-dark">Ver el proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="divDentroDeSection">
+                <h2 class="text-center">Contacto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis tristique purus, sed bibendum dolor vestibulum in.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TweenMax.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script>
+        // Inicializar ScrollMagic
+        var controller = new ScrollMagic.Controller();
+
+        // Desplazamiento horizontal de Inicio a Nosotros
+        new ScrollMagic.Scene({
+            triggerElement: "#section1",
+            triggerHook: "onLeave",
+            duration: "100%",
+            offset: 100
+        })
+        .setPin("#section1")
+        .on("enter", function() {
+            TweenMax.to("#section1", 1, { x: "-100%" });
+        })
+        .addTo(controller);
+
+        // Desplazamiento vertical de Nosotros a Proyectos
+        new ScrollMagic.Scene({
+            triggerElement: "#section2",
+            triggerHook: "onLeave",
+            duration: "100%",
+            offset: 100
+        })
+        .setPin("#section2")
+        .on("enter", function() {
+            TweenMax.to("#section2", 1, { y: "-100%" });
+        })
+        .addTo(controller);
+
+        // Desplazamiento horizontal de Proyectos a Contacto
+        new ScrollMagic.Scene({
+            triggerElement: "#section3",
+            triggerHook: "onLeave",
+            duration: "100%",
+            offset: 100
+        })
+        .setPin("#section3")
+        .on("enter", function() {
+            TweenMax.to("#section3", 1, { x: "100%" });
+        })
+        .addTo(controller);
+
+        // Desplazamiento vertical de Contacto a Inicio
+        new ScrollMagic.Scene({
+            triggerElement: "#section4",
+            triggerHook: "onLeave",
+            duration: "100%",
+            offset: 100
+        })
+        .setPin("#section4")
+        .on("enter", function() {
+            TweenMax.to("#section4", 1, { y: "100%" });
+        })
+        .addTo(controller);
+
+        // Configuración de fullPage.js
+        new fullpage("#fullpage", {
+            autoScrolling: true,
+            navigation: true,
+            navigationPosition: "right",
+            navigationTooltips: ["Inicio", "Nosotros", "Proyectos", "Contacto"],
+            showActiveTooltip: true,
+            slidesNavigation: true,
+            controlArrows: false,
+            scrollingSpeed: 800,
+            onLeave: function(origin, destination, direction) {
+                if (origin.index === 0 && direction === "down") {
+                    gsap.to('#section1 .glassmorphism', { opacity: 0, duration: 1 });
+                } else {
+                    gsap.to('#section1 .glassmorphism', { opacity: 1, duration: 1 });
+                }
+                if (origin.index === 1 && direction === "down") {
+                    gsap.to('#section2 .glassmorphism', { opacity: 0, duration: 1 });
+                } else {
+                    gsap.to('#section2 .glassmorphism', { opacity: 1, duration: 1 });
+                }
+                if (origin.index === 2 && direction === "down") {
+                    gsap.to('#section3 .glassmorphism', { opacity: 0, duration: 1 });
+                } else {
+                    gsap.to('#section3 .glassmorphism', { opacity: 1, duration: 1 });
+                }
+                if (origin.index === 3 && direction === "down") {
+                    gsap.to('#section4 .glassmorphism', { opacity: 0, duration: 1 });
+                } else {
+                    gsap.to('#section4 .glassmorphism', { opacity: 1, duration: 1 });
+                }
+            }
+        });
+
+        AOS.init();
+    </script> -->
 </body>
 </html>
